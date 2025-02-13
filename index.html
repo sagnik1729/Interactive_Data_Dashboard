@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Data Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="decorative-blobs">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+    </div>
+    <div class="container">
+        <h1 class="title">Company Performance Dashboard</h1>
+        <div class="chart-controls">
+            <button class="btn active" data-chart="bar">Sales Report</button>
+            <button class="btn" data-chart="pie">Product Distribution</button>
+            <button class="btn" data-chart="line">Growth Trend</button>
+        </div>
+        <div class="chart-container">
+            <canvas id="barChart"></canvas>
+            <canvas id="pieChart"></canvas>
+            <canvas id="lineChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
